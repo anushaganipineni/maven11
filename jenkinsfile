@@ -3,11 +3,5 @@ node("master") {
   git url: 'https://github.com/anushaganipineni/maven11.git' ,
      credentialsId: 'github1',
      branch: master
-
-  // The rest of your Groovy here...
-
-  stage 'Use Git'
-  // Do anything you like with your Git repo
-  sh 'git add -A && git commit -m "Update code" && git push origin master'
 }
 
