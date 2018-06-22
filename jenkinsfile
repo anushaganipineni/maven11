@@ -1,9 +1,21 @@
-node{
- agent any
- stage('build')
- {
-  git url: 'https://github.com/anushaganipineni/maven11.git' ,
-     credentialsId: 'github1',
-     branch: master
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
+        }
+    }
 }
-}
+
