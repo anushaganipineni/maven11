@@ -1,0 +1,21 @@
+node
+{
+git credentialsId: 'github1', url: 'https://github.com/anushaganipineni/maven11.git'
+stages {
+        stage('Build') {
+            steps {
+                echo 'Building'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
+        }
+}
+}
