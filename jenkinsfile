@@ -1,6 +1,7 @@
 node
 {
 git credentialsId: 'github1', url: 'https://github.com/anushaganipineni/maven11.git'
+agent any
 stages {
         stage('Build') {
             steps {
